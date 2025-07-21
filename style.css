@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #282c34; /* Dark background */
+    color: #f0f0f0; /* Light text */
+    overflow: hidden; /* Prevent scrollbars */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90vw;
+    height: 90vh;
+    background-color: #3a404c;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 2.5em; /* Larger font for header */
+    font-weight: bold;
+}
+
+.top-left {
+    text-align: left;
+}
+
+.top-right {
+    text-align: right;
+}
+
+.countdown-display {
+    flex-grow: 1; /* Allows it to take up remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#countdown-timer {
+    font-size: 10em; /* Very large for the main countdown */
+    font-weight: bold;
+    color: #61dafb; /* A vibrant color */
+    text-shadow: 0 0 15px rgba(97, 218, 251, 0.7);
+    white-space: nowrap; /* Prevent timer from wrapping */
+}
+
+#next-period-info {
+    font-size: 2.5em; /* Info about the next period */
+    margin-top: 20px;
+    color: #ccc;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    #countdown-timer {
+        font-size: 8em;
+    }
+    .header {
+        font-size: 2em;
+    }
+    #next-period-info {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    #countdown-timer {
+        font-size: 6em;
+    }
+    .header {
+        font-size: 1.5em;
+    }
+    #next-period-info {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    #countdown-timer {
+        font-size: 4em;
+    }
+    .header {
+        font-size: 1em;
+    }
+    #next-period-info {
+        font-size: 1em;
+    }
+    .container {
+        padding: 10px;
+    }
+}
