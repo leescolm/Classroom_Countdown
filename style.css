@@ -5,8 +5,8 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #282c34; /* Dark background */
-    color: #f0f0f0; /* Light text */
+    background-color: #000000; /* Black background */
+    color: #FFFFFF; /* White text for general elements */
     overflow: hidden; /* Prevent scrollbars */
 }
 
@@ -16,7 +16,7 @@ body {
     justify-content: space-between;
     width: 90vw;
     height: 90vh;
-    background-color: #3a404c;
+    background-color: #1a1a1a; /* Slightly lighter black for the container */
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     padding: 20px;
@@ -31,6 +31,7 @@ body {
     padding: 10px 0;
     font-size: 2.5em; /* Larger font for header */
     font-weight: bold;
+    color: #FFFFFF; /* White text for header details */
 }
 
 .top-left {
@@ -53,15 +54,15 @@ body {
 #countdown-timer {
     font-size: 10em; /* Very large for the main countdown */
     font-weight: bold;
-    color: #61dafb; /* A vibrant color */
-    text-shadow: 0 0 15px rgba(97, 218, 251, 0.7);
+    color: #FFFF00; /* Bright Yellow for the countdown numbers */
+    text-shadow: 0 0 20px rgba(255, 255, 0, 0.7); /* Subtle yellow glow */
     white-space: nowrap; /* Prevent timer from wrapping */
 }
 
 #next-period-info {
     font-size: 2.5em; /* Info about the next period */
     margin-top: 20px;
-    color: #ccc;
+    color: #CCCCCC; /* Slightly subdued white for info text */
 }
 
 /* Responsive adjustments */
